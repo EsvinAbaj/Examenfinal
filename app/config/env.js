@@ -1,10 +1,10 @@
 
 
 const env = {
-  database: 'umg_proyectoweb1996_am5x',
-  username: 'umg_proyectoweb1996_am5x_user',
-  password: 'alc6XLFmt16gOA1scA0rv2lGBbLee99H',
-  host: 'dpg-crod4nq3esus73c07fa0-a.oregon-postgres.render.com',
+  database: 'login_node_jwt_hfcp',
+  username: 'login_node_jwt_hfcp_user',
+  password: 'RhbIVzHY17ofoLxiRSkH9Tgq1kcGTlIb',
+  host: 'dpg-csk7ppdsvqrc73f32u0g-a.oregon-postgres.render.com',
   dialect: 'postgres',
   pool: {
     max: 5,

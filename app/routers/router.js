@@ -3,9 +3,9 @@ let express = require('express');
 let router = express.Router();
  
 const customers = require('../controllers/controller.js');
-const cuenta = require('../controllers/controller.cuenta.js');
-const transaccion = require('../controllers/controller.transaccion.js');
-const Control = require('../controllers/controller.control.js');
+
+const proyectos = require('../controllers/controller.proyecto.js');
+const { Proyecto } = require('../config/db.config.js');
 
 router.post('/api/customers/create', customers.create);
 router.get('/api/customers/all', customers.retrieveAllCustomers);
@@ -16,14 +16,9 @@ router.get('/api/customers/pagefiltersort', customers.pagingfilteringsorting);
 router.put('/api/customers/update/:id', customers.updateById);
 router.delete('/api/customers/delete/:id', customers.deleteById);
 
-router.post('/api/cuenta/create', cuenta.create);
-router.get('/api/cuenta/all', cuenta.retrieveAllCuenta);
-router.delete('/api/cuenta/delete/:id', cuenta.deleteById);
-
-router.post('/api/transaccion/create',transaccion.create);
-router.get('/api/transaccion/all', transaccion.retrieveAllTransaccion);
-router.delete('/api/transaccion/delete/:id', transaccion.deleteById);
 
 
-router.post('/api/control/create',Control.create);
+router.post('/api/proyectos/create', proyectos.create);
+router.get('/api/proyectos/all', proyectos.retrieveAllProyectos);
+router.delete('/api/proyectos/delete/:id', proyectos.deleteById);
 module.exports = router;

@@ -26,12 +26,10 @@ const db = {};
 
 db.Sequelize = Sequelize;
 db.sequelize = sequelize;
-db.sequelize = sequelize;
-db.sequelize = sequelize;
 
+ 
 db.Customer = require('../models/customer.model.js')(sequelize, Sequelize);
-db.Cuenta = require('../models/cuenta.model.js')(sequelize, Sequelize);
-db.Transaccion = require('../models/transaccion.model.js')(sequelize, Sequelize);
-db.Control = require('../models/control.model.js')(sequelize, Sequelize);
+
+db.Proyecto1 = require('../models/proyecto.model.js')(sequelize, Sequelize);
  
 module.exports = db;
